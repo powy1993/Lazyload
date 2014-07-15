@@ -24,6 +24,7 @@ function lazyload(options) {
 				_setimg(obj);
 				imgobj.splice(i, 1);
 				len--;
+				if(len===0){loadstop()}
 			}
 		}
 	}
@@ -49,6 +50,9 @@ function lazyload(options) {
 		ele.src = ele.getAttribute('data-src');
 
 	}
+	function loadstop(){
 	window.removeEventListener ? window.removeEventListener("scroll", handler, false) : window.detachEvent("onscroll", handler);
+	}
+    loadstop();
 	window.addEventListener ? window.addEventListener("scroll", handler, false) : window.attachEvent("onscroll", handler);
 }
