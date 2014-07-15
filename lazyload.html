@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Demo-Lazyload</title>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+<style>
+         img{height: 500px;width: 500px;display:block;background: url(http://1.lazyloading.sinaapp.com/Lazy/images/loading.gif) no-repeat center; margin: 0 auto}
+         #lazy{width: 800px;margin: 0 auto}
+</style>
+</head>
+<script src="lazyload.min.js"></script>
+<body>
+<div id="lazy">
+	<img data-src="http://1.lazyloading.sinaapp.com/Lazy/images/1.jpg" src="http://1.lazyloading.sinaapp.com/Lazy/images/pixel.gif"/>
+	<img data-src="http://1.lazyloading.sinaapp.com/Lazy/images/2.jpg" src="http://1.lazyloading.sinaapp.com/Lazy/images/pixel.gif"/>
+	<img data-src="http://1.lazyloading.sinaapp.com/Lazy/images/3.jpg" src="http://1.lazyloading.sinaapp.com/Lazy/images/pixel.gif" data-range="-200"/>
+	<img data-src="http://1.lazyloading.sinaapp.com/Lazy/images/4.jpg" src="http://1.lazyloading.sinaapp.com/Lazy/images/pixel.gif"/>
+	<img data-src="http://1.lazyloading.sinaapp.com/Lazy/images/5.png" src="http://1.lazyloading.sinaapp.com/Lazy/images/pixel.gif"/>
+	<img data-src="http://1.lazyloading.sinaapp.com/Lazy/images/6.jpg" src="http://1.lazyloading.sinaapp.com/Lazy/images/pixel.gif" data-time="2000" data-range="300"/>
+	<img data-src="http://1.lazyloading.sinaapp.com/Lazy/images/7.png" src="http://1.lazyloading.sinaapp.com/Lazy/images/pixel.gif" data-time="2000"/>
+</div>
+<script type="text/javascript">
+      var lazyloading = lazyload({       
+        id:"lazy",
+        lazyTime:200,
+        lazyRange:100
+      });
+        </script>
+</body>
+</html>
