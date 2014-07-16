@@ -2,12 +2,13 @@ Lazyload
 ========
 ## WHY Lazyload?
 
-- When Webpage page scrolling into place, the corresponding position of the picture content is loaded to display, which can significantly reduce the pressure and flow of the server, also can reduce the burden of the browser.
-- Lazy loading is a manifestation of humanity's program, enhance the user experience, to prevent the disposable loading of large amounts of data, according to user needs to load.
+- When Webpage page scrolling into place, the corresponding position of the picture content is loaded to display, which can significantly reduce the pressure and flow of the server, also can reduce the burden of the browser
+- Lazy loading is a manifestation of humanity's program, enhance the user experience, to prevent the disposable loading of large amounts of data, according to user needs to load
 - This is a [Demo](http://1.lazyloading.sinaapp.com/Lazy/lazyload.html)
 
-- 当网页页面滚动到相应的地方，对应位置的图片内容才进行加载显示，这样能明显减少了服务器的压力和流量，也能够减小浏览器的负担。
-- 惰性加载是程序人性化的一种体现，提高用户体验，防止一次性加载大量数据，根据用户需要进行加载。
+
+- 当网页页面滚动到相应的地方，对应位置的图片内容才进行加载显示，这样能明显减少了服务器的压力和流量，也能够减小浏览器的负担
+- 惰性加载是程序人性化的一种体现，提高用户体验，防止一次性加载大量数据，根据用户需要进行加载
 - 这是一个在线的[演示](http://1.lazyloading.sinaapp.com/Lazy/lazyload.html)
 
 ## Usage
