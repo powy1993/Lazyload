@@ -41,6 +41,7 @@ var lazyloading = lazyload({
       });
 ```
 I always place this at the bottom of the page, externally, to verify the page is ready.
+
 我经常把这段js放在页面底部来确保页面已经加载完毕。
 
 ``` css
