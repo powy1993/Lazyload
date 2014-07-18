@@ -49,6 +49,7 @@ I always place this at the bottom of the page, externally, to verify the page is
  }
 ```
 loadingPicURL:the loading effect of Reading pictures (existing in the project directory, you can directly use)
+
 loadingPicURL:读取图片时候的动态效果（在项目文件夹中已经存在，你可以直接使用）
 
 ## Config Options
@@ -56,17 +57,13 @@ loadingPicURL:读取图片时候的动态效果（在项目文件夹中已经存
 Lazyload can take an optional second parameter– an object of key/value settings:
 
 - **id** String *(default:'')* - id of the img wrap.(Default means that the entire document)
-
 - **lazyTime** Integer *(default:0)* - Delay of lazyload
-
 - **lazyRange** Integer *(default:0)* - Advance lazyload distance(A negative value indicates the distance of not loaded in vision)
 
 
 Lazyload 可以让你传入一个对象，并且用一些属性来设置懒加载模式：
 
 - **id** String *(默认值:'')* - img包裹的id名称（如果留空则意味着全文档的图片都应用懒加载）
-
 - **lazyTime** Integer *(默认值：0)* - 懒加载延迟（相对于它应该被加载的情况下）
-
 - **lazyRange** Integer *(默认值:0)* - 提前加载的距离，负数表示出现在视野中也不加载的距离。 
 
