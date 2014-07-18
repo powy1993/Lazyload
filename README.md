@@ -2,9 +2,9 @@ Lazyload
 ========
 ## WHY Lazyload?
 
-- When Webpage page scrolling into place, the corresponding position of the picture content is loaded to display, which can significantly reduce the pressure and flow of the server, also can reduce the burden of the browser
-- Lazy loading is a manifestation of humanity's program, enhance the user experience, to prevent the disposable loading of large amounts of data, according to user needs to load
-- This is a [Demo](http://1.lazyloading.sinaapp.com/Lazy/lazyload.html)
+* When Webpage page scrolling into place, the corresponding position of the picture content is loaded to display, which can significantly reduce the pressure and flow of the server, also can reduce the burden of the browser
+* Lazy loading is a manifestation of humanity's program, enhance the user experience, to prevent the disposable loading of large amounts of data, according to user needs to load
+* This is a [Demo](http://1.lazyloading.sinaapp.com/Lazy/lazyload.html)
 
 
 - 当网页页面滚动到相应的地方，对应位置的图片内容才进行加载显示，这样能明显减少了服务器的压力和流量，也能够减小浏览器的负担
@@ -21,10 +21,11 @@ Lazyload only needs to follow a simple pattern. Here is an example:
 </div>
 ```
 
-- need lazy-load picture: The picture URL which you want to lazyload
-- Packing diagramURL: Transparent drawing a pixel filling (existing in the project directory, you can directly use)
-- data-time: Delay of lazyload
-- data-range: Advance lazyload distance
+* need lazy-load picture: The picture URL which you want to lazyload
+* Packing diagramURL: Transparent drawing a pixel filling (existing in the project directory, you can directly use)
+* data-time: Delay of lazyload
+* data-range: Advance lazyload distance
+
 
 - 需要懒加载的图片：你需要懒加载图片的URL
 - 填充图：1px的填充图防止布局破环或者出现难看的红叉（在项目文件夹中已经存在，你可以直接使用）
@@ -59,4 +60,13 @@ Lazyload can take an optional second parameter– an object of key/value setting
 - **lazyTime** Integer *(default:0)* - Delay of lazyload
 
 - **lazyRange** Integer *(default:0)* - Advance lazyload distance(A negative value indicates the distance of not loaded in vision)
+
+
+Lazyload 可以让你传入一个对象，并且用一些属性来设置懒加载模式：
+
+- **id** String *(默认值:'')* - img包裹的id名称（如果留空则意味着全文档的图片都应用懒加载）
+
+- **lazyTime** Integer *(默认值：0)* - 懒加载延迟（相对于它应该被加载的情况下）
+
+- **lazyRange** Integer *(默认值:0)* - 提前加载的距离，负数表示出现在视野中也不加载的距离。 
 
