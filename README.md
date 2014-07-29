@@ -1,5 +1,6 @@
 Lazyload
 ========
+## I have a BIG Bug and my master is fixed me! Wait!
 ## WHY Lazyload?
 
 * When Webpage page scrolling into place, the corresponding position of the picture content is loaded to display, which can significantly reduce the pressure and flow of the server, also can reduce the burden of the browser
