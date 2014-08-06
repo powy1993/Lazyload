@@ -13,6 +13,7 @@ Lazyload
 - 这是一个在线的[演示](http://1.lazyloading.sinaapp.com/Lazy/lazyload.html)
 
 ## Usage
+Support ie5.5+, FF, chrome or other common browser.
 Lazyload only needs to follow a simple pattern. Here is an example:
 
 ``` html
