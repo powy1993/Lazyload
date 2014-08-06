@@ -5,8 +5,8 @@ function lazyload(options) {
 	tmplen = tmp.length,
 	imgobj = [];
 
-	while (tmplen--) {
-		var _tmpobj = tmp[tmplen];
+	for (var i = 0; i<tmplen; i++) {
+		var _tmpobj = tmp[i];
 		if (_tmpobj.getAttribute('data-src') !== null) {
 			if (isLoad(_tmpobj)) {
 				setimg(_tmpobj);
@@ -31,9 +31,16 @@ function lazyload(options) {
 
 	function isLoad(ele) {
 		var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+		if(typeof ele==='undefined') return false;
 		var edit = ~~ele.getAttribute("data-range") || options.lazyRange;
 		var clientHeight = scrollTop + document.documentElement.clientHeight + edit;
-		return (clientHeight > ele.offsetTop);
+		var offsetTop = 0;
+
+		while(ele.tagName !== 'BODY'){
+        		offsetTop += ele.offsetTop;
+        		ele = ele.offsetParent;
+        	}
+		return (clientHeight > offsetTop);
 	}
 	function _setimg(ele) {
 		if (options.lazyTime) {
