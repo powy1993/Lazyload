@@ -36,7 +36,7 @@ function lazyload(options) {
 		var clientHeight = scrollTop + document.documentElement.clientHeight + edit;
 		var offsetTop = 0;
 
-		while(ele.tagName !== 'BODY'){
+		while(ele.tagName.toUpperCase() !== 'BODY'){
         		offsetTop += ele.offsetTop;
         		ele = ele.offsetParent;
         	}
